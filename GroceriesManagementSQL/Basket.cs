@@ -76,8 +76,6 @@ namespace GroceriesManagementSQL
                         InsertCommand.Parameters.Add(new SqlParameter("1", t.Price));
                         InsertCommand.Parameters.Add(new SqlParameter("2", t.Category));
                         int c = InsertCommand.ExecuteNonQuery();
-                        Console.WriteLine(c);
-
                     }
                 }
             }
