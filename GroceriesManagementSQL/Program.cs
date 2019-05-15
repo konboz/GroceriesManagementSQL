@@ -6,7 +6,11 @@ namespace GroceriesManagementSQL
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Basket conn = new Basket();
+            conn.SaveToJson();
+            conn.InsertToDb();
+
+            Console.ReadLine();
         }
     }
 }
